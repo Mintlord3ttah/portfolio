@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-home {
+  background-image: linear-gradient(#000000b9, #00000060), url("/mountain.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1;
+  /* grid-template-rows: auto 1fr; */
+  color: #e6e6e6;
+  position: relative;
+}
+
+.nav-wrap {
+  position: fixed;
+  z-index: 10;
+  /* background-color: #19191f; */
+  backdrop-filter: blur(24px);
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  border-bottom: 1px solid #f7f4f459;
+}
+
+main {
+  /* position: absolute; */
+  padding-top: 8rem;
+  height: 100%;
+  width: 100%;
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  /* left: 50%; */
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background-color: #1b030342;
+  box-shadow: inset 0px 0px 3px 3px #22040460,
+    0px 12px 22px 0px #000;
+}
+.menu,
+.vertical-nav-ul{
+  display: none;
+    order: 1;
+
+}
+.horizontal-nav-ul{
+  order: 1;
+}
+
+.card-desc {
+  color: #c7c5c5;
+}
+@media (max-width: 600px) { 
+  .horizontal-nav-ul {
+    order: 0;
+    display: none;
+  }
+    .over-lay{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000; */
+    position: fixed;
+    z-index: 100;
+  }
+  .over-lay,
+  .menu-list{
+    top: 0;
+    right: 0;
+  }
+  .menu-list{
+    backdrop-filter: blur(24px);
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    
+  }
+  .hidden{
+    opacity: 0;
+  }
+  .vertical-nav-ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .menu-close-btn{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+
+  }
+  .menu{
+  display: inline-block;
+  cursor: pointer;
+}
+.menu:hover{
+  color: #da7c81;
+}
+  .card {
+    width: 100%;
+  }
+}
