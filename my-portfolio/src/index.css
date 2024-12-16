@@ -8,7 +8,6 @@
   font-weight: 400;
 
   --text-color-dark: #272727;
-  /* --text-color-dark-red:  #1f0202; */
   --text-color-light: #ebebeb;
   --color-light: #fff;
 
@@ -17,21 +16,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* .app{
-  color: #e6e6e6;
-  
-} */
+
 .app-home {
-  /* background-image: linear-gradient(#000000b9, #00000060), url("/mountain.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1;
-  /* grid-template-rows: auto 1fr; */
-  /* color: #e6e6e6; */
-  /* color: #272727; */
   position: relative;
 }
 
@@ -41,6 +30,7 @@
   background-color: var(--color-light);
   top: 0;
   left: 0;
+  box-shadow: 0 0 5px 0 #cac9c9;
 }
 
 .nav {
@@ -48,7 +38,6 @@
 }
 
 main {
-  /* position: absolute; */
   padding-top: 8rem;
   height: 100%;
   width: 100%;
@@ -62,15 +51,10 @@ main {
 footer {
   position: relative;
   bottom: 0;
-  /* left: 50%; */
   width: 100%;
   text-align: center;
 }
 
-.card {
-  /* background-color: var(--text-color-light); */
-  /* box-shadow: 0px 5x 13px 3px #dfdfdf; */
-}
 .menu,
 .vertical-nav-ul{
   display: none;
