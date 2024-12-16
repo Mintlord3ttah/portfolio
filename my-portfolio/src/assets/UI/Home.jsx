@@ -12,7 +12,7 @@ export default function Home() {
             <div className="app-home">
                 <main className={`h-full ${flexCenter} gap-12`}>
                     <div className="container-hero w-full flex justify-center px-4 py-6">
-                        <div className={`${flexCenter} md:w-1/2 gap-7`}>
+                        <div className={`${flexCenter} max-w-3xl gap-7`}>
                             <h1 className="md:text-5xl text-5xl text-center md:font-bold font-medium">Make your brand stand out with our professional services!</h1>
                             <p className="text-center">Hi there, I'm Mint, a professional web developer. I can create you a sleek and modern website that will make your brand stand out from the crowd.</p>
                             <Button>See Projects &rarr;</Button>
