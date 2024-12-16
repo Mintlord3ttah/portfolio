@@ -30,7 +30,7 @@ function UnOrderedList({ flexDir, menuType }) {
             <li>ABOUT</li>
             <li>SERVICES</li>
             <li>PORTFOLIO</li>
-            <li><Button>CONTACT <span><ion-icon name="call-outline"></ion-icon></span></Button></li>
+            <li><a href="tel:+2349023172761"><Button>CONTACT <span><ion-icon name="call-outline"></ion-icon></span></Button></a></li>
         </ul>
     )
 }
