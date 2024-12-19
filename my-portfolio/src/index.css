@@ -43,9 +43,14 @@ main {
   width: 100%;
 
 }
-.container-hero{
+
+.container-hero {
   background-color: var(--text-color-light);
   color: var(--text-color-dark);
+}
+
+.texts-con {
+  /* background-color: #eeeeeec9; */
 }
 
 footer {
@@ -55,55 +60,99 @@ footer {
   text-align: center;
 }
 
-.menu,
-.vertical-nav-ul{
-  display: none;
-    order: 1;
+.pro-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  /* font-size: xx-large; */
+}
+
+.grid-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr auto;
+}
+
+.grid-span-full {
+  grid-column: 1 / -1;
 
 }
-.horizontal-nav-ul{
+
+.grid-span-bit {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.menu,
+.vertical-nav-ul {
+  display: none;
+  order: 1;
+
+}
+
+.horizontal-nav-ul {
   order: 1;
 }
 
 .card-desc {
   color: var(--text-color-dark);
 }
-ul>*{
+
+ul>* {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-ul>*:hover{
+
+ul>*:hover {
   border-bottom: 1px solid red;
   color: #e7a3a6;
 }
-@media (max-width: 600px) { 
+
+@media (max-width: 1200px) {
+  .grid-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-con {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
   .horizontal-nav-ul {
     order: 0;
     display: none;
   }
-    .over-lay{
+
+  .over-lay {
     width: 100%;
     height: 100vh;
     /* background-color: #000; */
     position: fixed;
     z-index: 100;
   }
+
   .over-lay,
-  .menu-list{
+  .menu-list {
     top: 0;
     right: 0;
   }
-  .menu-list{
+
+  .menu-list {
     backdrop-filter: blur(24px);
     width: 80%;
     height: 100%;
     position: absolute;
-    
+
   }
-  .hidden{
+
+  .hidden {
     opacity: 0;
   }
-  .vertical-nav-ul{
+
+  .vertical-nav-ul {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -111,19 +160,23 @@ ul>*:hover{
     justify-content: center;
     gap: 2rem;
   }
-  .menu-close-btn{
+
+  .menu-close-btn {
     position: absolute;
     top: 2rem;
     left: 1rem;
 
   }
-  .menu{
-  display: inline-block;
-  cursor: pointer;
-}
-.menu:hover{
-  color: #da7c81;
-}
+
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .menu:hover {
+    color: #da7c81;
+  }
+
   .card {
     width: 100%;
   }

@@ -26,10 +26,10 @@ export default function Nav() {
 
 function UnOrderedList({ flexDir, menuType }) {
     return (
-        <ul className={`${menuType} flex  gap-4 items-center`}>
-            <li>ABOUT</li>
+        <ul className={`${menuType} flex  gap-5 items-center font-semibold`}>
+            <li>PROJECTS</li>
             <li>SERVICES</li>
-            <li>PORTFOLIO</li>
+            <li>ABOUT US</li>
             <li><a href="tel:+2349023172761"><Button>CONTACT <span><ion-icon name="call-outline"></ion-icon></span></Button></a></li>
         </ul>
     )
