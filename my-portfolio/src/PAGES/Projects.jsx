@@ -35,7 +35,7 @@ export default function Projects() {
                     `} />
                 <ProjectCard
                     icon={<CgSearch />}
-                    link={"Project not deployed"}
+                    link={"https://chef-diary.vercel.app/"}
                     type="custom"
                     image={"/chef diary.png"}
                     altText={"chef diary project"}
