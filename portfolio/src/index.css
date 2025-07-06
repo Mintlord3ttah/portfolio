@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root{
+  --primary-color: #c46b31;
+  --glow-color: #7bf1a8;
+  --glow-color-2: #00c950;
+  --glow-color-3: #00a63e;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.img-bg, .sec-bg{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-bg{
+  background-image: url("/icon.jfif");
+}
+/* .sec-bg{
+  background-image: url("/background-2.jpg");
+} */
+ .glow{
+  box-shadow: 0 0 10px var(--glow-color), 
+              0 0 30px var(--glow-color), 
+              0 0 60px var(--glow-color),
+              0 0 120px var(--glow-color),
+              0 0 200px var(--glow-color);
+ }
+ .glow-2{
+  box-shadow: 0 0 10px var(--glow-color-2), 
+              0 0 30px var(--glow-color-2), 
+              0 0 60px var(--glow-color-2),
+              0 0 120px var(--glow-color-2),
+              0 0 200px var(--glow-color-2);
+ }
+ .glow-3{
+  box-shadow: 0 0 10px var(--glow-color-3), 
+              0 0 30px var(--glow-color-3), 
+              0 0 60px var(--glow-color-3),
+              0 0 120px var(--glow-color-3),
+              0 0 200px var(--glow-color-3);
+ }
+
+ .pro-hover{
+  &:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+ }
