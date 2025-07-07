@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import Skills from "./pages/Skills"
 export default function App() {
   return (
     <BrowserRouter>
@@ -10,8 +11,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        {/* <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
          */}

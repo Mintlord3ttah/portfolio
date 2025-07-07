@@ -5,7 +5,7 @@ import Stack from "../components/Stack";
 export default function Home() {
   return (
     <section>
-    <section className="sec-bg flex px-24 justify-between gap-24 max-[1200px]:px-8 max-[1000px]:flex-col-reverse max-[1000px]:items-center  pt-40 ">
+    <section className="sec-bg flex px-24 justify-between gap-24 max-[1200px]:px-8 max-[1000px]:flex-col-reverse max-[1000px]:items-center pt-40 ">
         <div className="flex-3/4 max-[1200px]:flex-1/2  max-[1000px]:w-[36rem]">
 
         <div className=" size-60 bg-gray-200 overflow-hidden rounded-full">
@@ -53,12 +53,12 @@ export default function Home() {
 
         
     </section>
-    <section className="px-24 mt-36 relative" id="projects">
-        <div className="w-fit">
+    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
+        <div className="w-fit max-[1000px]:m-auto">
             {/* <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="left-[10%] bottom-0" /> */}
             <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
             <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
-            <div className="flex gap-8 flex-wrap w-fit">
+            <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 gap-8 w-fit">
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="mapify2.png" title="Mapify - Location Tracker" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="fundaweb-app-new layout.png" title="Fundaweb - Collaborative investment app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
@@ -71,7 +71,6 @@ export default function Home() {
         </div>
     </section>
     {/* <section className="px-24 mt-36 relative">
-        <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-0" />
     </section> */}
     </section>
 

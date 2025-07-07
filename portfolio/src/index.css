@@ -33,3 +33,13 @@ body{
     box-shadow: 0 0 10px var(--primary-color);
   }
  }
+
+ .sp-border{
+  border-top: 2px solid var(--primary-color);
+  border-right: 25px solid var(--primary-color);
+  
+  /* border-bottom: 25px solid var(--primary-color); */
+ }
+ /* .bg-flame{
+  background: linear-gradient(#fff, var(--primary-color));
+ } */
