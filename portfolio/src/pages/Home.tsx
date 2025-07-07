@@ -1,3 +1,4 @@
+import BG_Glow from "../components/BG_Glow";
 import ProjectCard from "../components/ProjectCard";
 import Stack from "../components/Stack";
 
@@ -15,20 +16,18 @@ export default function Home() {
         <p className="text-lg text-gray-600 mt-4">Hi, I'm a MERN-Stack/Mobile App developer with a passion for creating beautiful and functional user experiences.</p>
         <button className="mt-6 px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">View Projects</button>
         </div>
-        <div className="mt-24">
-            <h2 className="text-2xl font-bold text-gray-700">Simple Anecdote</h2>
-            <p className="text-lg text-gray-600 mt-2">Once, while working on a challenging project and being new to the Next.js framework, I encountered a significant roadblock. Instead of giving up, I took a step back, re-evaluated the problem, and approached it from a different angle. This experience taught me the importance of perseverance and creative problem-solving in web development.</p>
+        <div className="mt-24 relative">
+        <BG_Glow size={50} color={{one: "bg-orange-100",two: "bg-orange-200", three: "bg-orange-300"}} position="left-[10%] bottom-0" />
+            <h2 className="text-2xl z-10 font-bold text-gray-700">Simple Anecdote</h2>
+            <p className="text-lg text-gray-600  backdrop-blur-2xl z-10 mt-2">Once, while working on a challenging project and being new to the Next.js framework, I encountered a significant roadblock. Instead of giving up, I took a step back, re-evaluated the problem, and approached it from a different angle. This experience taught me the importance of perseverance and creative problem-solving in web development.</p>
         </div>
         </div>
         <div className="bg-glow relative  flex items-center justify-center h-full">
-            <div className="glow absolute right-2/4 size-48 bg-green-300 rounded-full flex justify-center items-center">
-                <div className="glow-2 size-32 bg-green-400 rounded-full flex justify-center items-center">
-                <div className="glow-3 size-24 bg-green-500 rounded-full"></div>
-                </div>
-            </div>
+            
+            <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="right-1/2" />
             <div className=" backdrop-blur-xs z-10 w-xl flex  justify-end flex-col gap-4">
                     <h2 className="text-[2.5rem] font-bold text-gray-600">Hey, I'm Glad You Are Here!</h2>
-                    <p className="text-lg text-gray-500">This is a simple portfolio application built with React. Feel free to explore my projects and skills!</p>
+                    <p className="text-lg text-gray-500">This is a simple portfolio application built with React & TypeScript. Feel free to explore my projects and skills!</p>
                     <button className="mt-6 w-fit px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">View Projects</button>
                     
                     <div className="mt-4 text-xs flex flex-col text-blue-600" >
@@ -54,17 +53,26 @@ export default function Home() {
 
         
     </section>
-    <section className="px-24 mt-36">
-        <div>
-            <h2 className="text-2xl mb-8 text-[var(--primary-color)]">Projects</h2>
-            <div className="flex gap-8">
+    <section className="px-24 mt-36 relative" id="projects">
+        <div className="w-fit">
+            {/* <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="left-[10%] bottom-0" /> */}
+            <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
+            <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
+            <div className="flex gap-8 flex-wrap w-fit">
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="mapify2.png" title="Mapify - Location Tracker" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="fundaweb-app-new layout.png" title="Fundaweb - Collaborative investment app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
             </div>
         </div>
+        <div className="flex justify-end">
+        {/* <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Previous: Skills</button> */}
+        <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Next: Skills &rarr;</button>
+        </div>
     </section>
+    {/* <section className="px-24 mt-36 relative">
+        <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-0" />
+    </section> */}
     </section>
 
   )

@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 export default function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
          */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
