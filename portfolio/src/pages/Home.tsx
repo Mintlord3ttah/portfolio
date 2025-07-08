@@ -1,12 +1,13 @@
 import BG_Glow from "../components/BG_Glow";
+import Navigators from "../components/Navigators";
 import ProjectCard from "../components/ProjectCard";
 import Stack from "../components/Stack";
 import TestimonialCard from "../components/TestimonialCard";
 
 export default function Home() {
   return (
-    <section>
-    <section className="sec-bg flex px-24 justify-between gap-24 max-[1200px]:px-8 max-[1000px]:flex-col-reverse pt-40 ">
+    <section className="px-24 max-[1200px]:px-8">
+    <section className="sec-bg flex justify-between gap-24 max-[1000px]:flex-col-reverse pt-40 ">
         <div className="flex-3/4 max-[1200px]:flex-1/2 ">
 
         <div className=" size-60 bg-gray-200 overflow-hidden rounded-full">
@@ -54,7 +55,7 @@ export default function Home() {
 
         
     </section>
-    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
+    <section className="mt-36 relative max-[1000px]:items-center" id="projects">
         <div className="">
             <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
             <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
@@ -66,7 +67,7 @@ export default function Home() {
             </div>
         </div>
     </section>
-    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center">
+    <section className="mt-36 relative max-[1000px]:items-center">
         <h2 className="text-2xl mb-4 text-[var(--primary-color)]">Testimonials</h2>
         <p className="text-gray-600 text-xl">What my clients say about me:</p>
         <div className="flex gap-8 mt-8 max-[636px]:flex-col">
@@ -75,10 +76,7 @@ export default function Home() {
             <TestimonialCard name="Bob Johnson" feedback="I can't recommend this enough!" />
         </div>
     </section>
-    <div className="flex justify-end">
-        {/* <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Previous: Skills</button> */}
-        <button className="border border-gray-200 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Next: Skills &rarr;</button>
-        </div>
+   <Navigators style="justify-end" nav_to="Skills" />
     </section>
 
   )

@@ -1,19 +1,20 @@
 import BG_Glow from "../components/BG_Glow"
+import Navigators from "../components/Navigators"
 import Skill from "../components/Skill"
 
 export default function Skills() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
-    <section className='flex flex-col items-center max-[490px]:items-start justify-center w-full gap-8 h-screen'>
-    <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[0] bottom-0" />
-        <div className='mb-16 max-[620px]:pt-40 flex max-[490px]:text-center w-full items-center justify-center gap-4'>
+    <section className='flex flex-col items-center justify-center w-full gap-8 h-screen'>
+    <BG_Glow size={50} color={{one: "bg-blue-100",two: "bg-blue-200", three: "bg-blue-300"}} position="right-[0] bottom-0" />
+        <div className='mb-16 max-[620px]:pt-32 flex max-[490px]:text-center w-full items-center justify-center gap-4'>
             <h1 className='sp-heading relative text-amber-700 text-8xl z-10'>Skills</h1>
         </div>
-        <p className='text-2xl text-center text-gray-700'>With an unwavering natural flare I have developed for my craft in coding and software developement in general, I've got a complete arsenal which I have proven in my skills sets.</p>
+        <p className='text-2xl text-center text-gray-700 z-10 backdrop-blur-xs'>With an unwavering natural flair I have developed for my craft in coding and software development in general, I've got a complete arsenal which I have proven in my skills sets.</p>
         <p className='text-amber-700 text-2xl mt-12 hover:text-amber-900 transition-all duration-500 cursor-pointer'>See Skills below &darr;</p>
     </section>
     <section className='flex flex-col w-full gap-8 relative'>
         <div>
-            <h2 className='text-2xl  text-amber-700'>Skills.</h2>
+            <h2 className='text-2xl  text-amber-700'>My Skills</h2>
             <p className=' text-gray-500 mt-4'>Here are some of the skills I have acquired over the years.</p>
         </div>
         <div className="relative ">
@@ -53,7 +54,7 @@ export default function Skills() {
             </ul>
         </div>
         <div className="relative">
-            <BG_Glow size={50} color={{one: "bg-red-300",two: "bg-red-400", three: "bg-red-500"}} position="left-[10%] top-[10%]" />
+            <BG_Glow size={50} color={{one: "bg-red-100",two: "bg-red-200", three: "bg-red-300"}} position="left-[10%] top-[10%]" />
             <h3 className="text-4xl">Back-end</h3>
             <ul className="list-disc list-inside z-10 backdrop-blur-xs mt-8 text-gray-700 flex flex-col gap-4">
                 <Skill name="Node.js">
@@ -109,12 +110,14 @@ export default function Skills() {
             </ul>
         </div>
     </section>
-    <div className="flex justify-between relative">
-    <BG_Glow size={50} color={{one: "bg-red-300",two: "bg-purple-400", three: "bg-purple-500"}} position="left-[50%] bottom-0" />
+    {/* <div className="flex justify-between relative">
 
-        <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-200 cursor-pointer transition duration-500 rounded-2xl">Prev: Projects &larr;</button>
-        <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-200 cursor-pointer transition duration-500 rounded-2xl">Next: About &rarr;</button>
-        </div>
+<button className="border border-gray-300 p-3 mt-12 hover:bg-gray-200 cursor-pointer transition duration-500 rounded-2xl">Projects &larr;</button>
+<button className="border border-gray-300 p-3 mt-12 hover:bg-gray-200 cursor-pointer transition duration-500 rounded-2xl">About &rarr;</button>
+</div> */}
+    <Navigators nav_back="Projects" nav_to="About" style="justify-between relative">
+        <BG_Glow size={50} color={{one: "bg-red-300",two: "bg-purple-400", three: "bg-purple-500"}} position="left-[50%] bottom-0" />
+    </Navigators>
     </section>
 }
 

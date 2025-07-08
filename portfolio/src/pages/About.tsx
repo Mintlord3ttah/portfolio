@@ -3,6 +3,7 @@ import { LiaUserEditSolid } from "react-icons/lia";
 import { MdMiscellaneousServices } from "react-icons/md";
 import BG_Glow from "../components/BG_Glow";
 import Skill from "../components/Skill";
+import Navigators from "../components/Navigators";
 
 export default function About() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
@@ -27,11 +28,11 @@ export default function About() {
                     <p className="text-xl mt-8 z-10 backdrop-blur-xs">Over the years I have honed my skills to a professional level and am proud to say this. Seeing my transformation into a whole new level backed by descipline, hardwork and grit, honestly its not always easy but its worth it. Perhaps, what makes me happy is seeing what I build solve real world problems and contributing to making life easy and the world a better place.</p>
                 </div>
                 <div>
-                <h2 className='text-2xl  text-amber-700'>Our Services</h2>
+                <h2 className='text-2xl  text-amber-700'>My Services</h2>
                 <p className="text-gray-600 mt-4">Here are my services and what I can do for you!</p>
                 <ul className="list-disc list-inside z-10 backdrop-blur-2xl mt-8 text-gray-700 flex flex-col gap-4">
                 <Skill name="Web Development">
-                        I create responsive and user-friendly websites using modern technologies like React, Next.js, and Tail 
+                        I create responsive and user-friendly websites using modern technologies like React, Next.js, and Tailwind 
                         CSS. My focus is on delivering high-quality, performant web applications that meet your needs.
                     </Skill>
                     <Skill name="Mobile App Development">
@@ -56,5 +57,6 @@ export default function About() {
                 </ul>
                 </div>
             </section>
+            <Navigators nav_back="Skills" nav_to="Contact" style="justify-between" />
         </section>
 }

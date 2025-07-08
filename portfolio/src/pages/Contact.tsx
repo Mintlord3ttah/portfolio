@@ -1,3 +1,4 @@
+import Navigators from "../components/Navigators";
 
 export default function Contact() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
@@ -11,5 +12,7 @@ export default function Contact() {
           <button className="mt-6 px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">Send Message</button>
           </form>
     </section>
+        <Navigators nav_back="About" />
+    
   </section>
 }
