@@ -1,6 +1,7 @@
 import BG_Glow from "../components/BG_Glow";
 import ProjectCard from "../components/ProjectCard";
 import Stack from "../components/Stack";
+import TestimonialCard from "../components/TestimonialCard";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         <div className="bg-glow relative  flex items-center justify-center h-full">
             
             <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="right-1/2" />
-            <div className=" backdrop-blur-xs z-10 w-xl flex  justify-end flex-col gap-4">
+            <div className=" backdrop-blur-xs z-10 max-[1000px]:w-xl flex  justify-end flex-col gap-4">
                     <h2 className="text-[2.5rem] font-bold text-gray-600">Hey, I'm Glad You Are Here!</h2>
                     <p className="text-lg text-gray-500">This is a simple portfolio application built with React & TypeScript. Feel free to explore my projects and skills!</p>
                     <button className="mt-6 w-fit px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">View Projects</button>
@@ -65,13 +66,20 @@ export default function Home() {
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
             </div>
         </div>
-        <div className="flex justify-end">
-        {/* <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Previous: Skills</button> */}
-        <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Next: Skills &rarr;</button>
+    </section>
+    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center">
+        <h2 className="text-2xl mb-4 text-[var(--primary-color)]">Testimonials</h2>
+        <p className="text-gray-600 text-xl">What my clients say about me:</p>
+        <div className="flex gap-8 mt-8">
+            <TestimonialCard name="Ettah N. Ettah" feedback="This is the best service I've ever used!" />
+            <TestimonialCard name="Jane Smith" feedback="Absolutely fantastic experience!" />
+            <TestimonialCard name="Bob Johnson" feedback="I can't recommend this enough!" />
         </div>
     </section>
-    {/* <section className="px-24 mt-36 relative">
-    </section> */}
+    <div className="flex justify-end">
+        {/* <button className="border border-gray-300 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Previous: Skills</button> */}
+        <button className="border border-gray-200 p-3 mt-12 hover:bg-gray-300 cursor-pointer transition duration-500 rounded-2xl">Next: Skills &rarr;</button>
+        </div>
     </section>
 
   )
