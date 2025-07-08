@@ -19,7 +19,7 @@ export default function Skills() {
         <div className="relative ">
             <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="right-[30%] top-[10%]" />
             <h3 className="text-4xl">Front-end</h3>
-            <ul className="list-disc z-10 backdrop-blur-2xl list-inside mt-8 text-gray-700 flex flex-col gap-4">
+            <ul className="list-disc z-10 backdrop-blur-xs list-inside mt-8 text-gray-700 flex flex-col gap-4">
                 <Skill name="HTML">
                     The backbone of web content, I use HTML to structure and present information on the web.
                 </Skill>
@@ -55,7 +55,7 @@ export default function Skills() {
         <div className="relative">
             <BG_Glow size={50} color={{one: "bg-red-300",two: "bg-red-400", three: "bg-red-500"}} position="left-[10%] top-[10%]" />
             <h3 className="text-4xl">Back-end</h3>
-            <ul className="list-disc list-inside z-10 backdrop-blur-2xl mt-8 text-gray-700 flex flex-col gap-4">
+            <ul className="list-disc list-inside z-10 backdrop-blur-xs mt-8 text-gray-700 flex flex-col gap-4">
                 <Skill name="Node.js">
                     I stack up my niche continuing from the JavaScript ecosytem and Node.js is not an exception for building scalable APIs.
                 </Skill>

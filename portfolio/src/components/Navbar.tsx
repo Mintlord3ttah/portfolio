@@ -15,7 +15,7 @@ export default function Navbar() {
     }
   }
   return (
-    <nav onClick={handleRemoveMenu} className='max-[620px]:relative flex z-50 fixed top-0 left-0 w-full bg-white justify-between items-center py-6 px-24 max-[1200px]:px-8 shadow-sm'>
+    <nav onClick={handleRemoveMenu} className=' flex z-50 fixed top-0 left-0 w-full bg-white justify-between items-center py-6 px-24 max-[1200px]:px-8 shadow-sm'>
         <div className='flex items-center w-full max-[620px]:justify-between'>
         <Logo />
         <button onClick={()=>setMenu(prev=>!prev)} className='btn hidden max-[620px]:block text-2xl'>{menu ? <FaTimes /> :<IoMenuOutline />}</button>

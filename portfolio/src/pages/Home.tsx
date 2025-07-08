@@ -6,15 +6,15 @@ import TestimonialCard from "../components/TestimonialCard";
 export default function Home() {
   return (
     <section>
-    <section className="sec-bg flex px-24 justify-between gap-24 max-[1200px]:px-8 max-[1000px]:flex-col-reverse max-[1000px]:items-center pt-40 ">
-        <div className="flex-3/4 max-[1200px]:flex-1/2  max-[1000px]:w-[36rem]">
+    <section className="sec-bg flex px-24 justify-between gap-24 max-[1200px]:px-8 max-[1000px]:flex-col-reverse pt-40 ">
+        <div className="flex-3/4 max-[1200px]:flex-1/2 ">
 
         <div className=" size-60 bg-gray-200 overflow-hidden rounded-full">
           <img src="coder.jfif" alt="developer" className="size-full rounded-full" />
         </div>
         <div className="">
         <h1 className="text-4xl font-bold mt-6 text-[#c46b31]">Confidence N. Ettah</h1>
-        <p className="text-lg text-gray-600 mt-4">Hi, I'm a MERN-Stack/Mobile App developer with a passion for creating beautiful and functional user experiences.</p>
+        <p className="text-lg max-[1000px]:text-2xl text-gray-600 mt-4">Hi, I'm a MERN-Stack/Mobile App developer with a passion for creating beautiful and functional user experiences.</p>
         <button className="mt-6 px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">View Projects</button>
         </div>
         <div className="mt-24 relative">
@@ -26,9 +26,9 @@ export default function Home() {
         <div className="bg-glow relative  flex items-center justify-center h-full">
             
             <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="right-1/2" />
-            <div className=" backdrop-blur-xs z-10 max-[1000px]:w-xl flex  justify-end flex-col gap-4">
+            <div className=" backdrop-blur-xs z-10 flex  justify-end flex-col gap-4">
                     <h2 className="text-[2.5rem] font-bold text-gray-600">Hey, I'm Glad You Are Here!</h2>
-                    <p className="text-lg text-gray-500">This is a simple portfolio application built with React & TypeScript. Feel free to explore my projects and skills!</p>
+                    <p className="text-lg max-[1000px]:text-2xl text-gray-500">This is a simple portfolio application built with React & TypeScript. Feel free to explore my projects and skills!</p>
                     <button className="mt-6 w-fit px-6 py-2 bg-[#c46b31] cursor-pointer text-white rounded-full hover:bg-amber-600 transition duration-300">View Projects</button>
                     
                     <div className="mt-4 text-xs flex flex-col text-blue-600" >
@@ -54,23 +54,22 @@ export default function Home() {
 
         
     </section>
-    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
-        <div className="w-fit max-[1000px]:m-auto">
-            {/* <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="left-[10%] bottom-0" /> */}
+    {/* <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
+        <div className="">
             <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
             <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
-            <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 gap-8 w-fit">
+            <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-[636px]:gap-4 max-[600px]:grid-cols-1 gap-8 w-fit">
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="mapify2.png" title="Mapify - Location Tracker" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="fundaweb-app-new layout.png" title="Fundaweb - Collaborative investment app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
             </div>
         </div>
-    </section>
+    </section> */}
     <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center">
         <h2 className="text-2xl mb-4 text-[var(--primary-color)]">Testimonials</h2>
         <p className="text-gray-600 text-xl">What my clients say about me:</p>
-        <div className="flex gap-8 mt-8">
+        <div className="flex gap-8 mt-8 max-[636px]:flex-col">
             <TestimonialCard name="Ettah N. Ettah" feedback="This is the best service I've ever used!" />
             <TestimonialCard name="Jane Smith" feedback="Absolutely fantastic experience!" />
             <TestimonialCard name="Bob Johnson" feedback="I can't recommend this enough!" />
