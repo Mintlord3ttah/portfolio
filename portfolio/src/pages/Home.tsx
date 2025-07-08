@@ -60,10 +60,10 @@ export default function Home() {
             <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
             <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
             <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-[636px]:gap-4 max-[600px]:grid-cols-1 gap-8 w-fit">
-                <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
-                <ProjectCard img="mapify2.png" title="Mapify - Location Tracker" description="This is a simple yet indespensible native app for preparing and managing travel items." />
-                <ProjectCard img="fundaweb-app-new layout.png" title="Fundaweb - Collaborative investment app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
-                <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
+                <ProjectCard img="iREMEMBER APP-2.gif" title="Iremember - Task Management app" description="This is a simple yet indespensible web app for preparing and managing travel items." link="https://iremember-eta.vercel.app" />
+                <ProjectCard img="new design insta.png" title="Instablog - Blogging Platform" description="This is a blogging platform that allows users to create and share their own blogs." link="https://instablog.vercel.app" />
+                <ProjectCard img="mapify2.png" title="Mapify - Location Tracker" description="This project is a map based web app that helps users keep logs/track their location." link="https://mapify.com" />
+                <ProjectCard img="fundaweb-app-new layout.png" title="Fundaweb - Collaborative investment app" description="This is a collaborative investment app that allows users to pool resources and invest in real estate projects." link="https://fundaweb.com" />
             </div>
         </div>
     </section>
