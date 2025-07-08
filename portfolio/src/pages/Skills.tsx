@@ -3,7 +3,7 @@ import Skill from "../components/Skill"
 
 export default function Skills() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
-    <section className='flex flex-col items-center justify-center w-full gap-8 h-screen'>
+    <section className='flex flex-col items-center max-[350px]:items-start justify-center w-full gap-8 h-screen'>
     <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[0] bottom-0" />
         <div className='sp-border size-40 rounded-full flex '>
             <h1 className='text-amber-700 text-8xl'>Skills</h1>

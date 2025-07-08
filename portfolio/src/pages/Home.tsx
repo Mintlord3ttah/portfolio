@@ -35,7 +35,7 @@ export default function Home() {
                     <a href="https://github.com/Mintlord3ttah">https://github.com/Mintlord3ttah</a>
                     <a href="tel:+2349025377960">+234-902-537-7960</a>
                     </div>
-                <div className="backdrop-blur-sm bg-gray-400/50 p-6 rounded-lg w-[24rem] flex flex-col">
+                <div className="backdrop-blur-sm bg-gray-400/50 p-6 rounded-lg w-[24rem] max-[500px]:w-full flex flex-col">
                     <Stack stack="HTML" level="95" />
                     <Stack stack="CSS" level="88" />
                     <Stack stack="JavaScript" level="97" />
