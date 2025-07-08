@@ -8,7 +8,7 @@ export default function About() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
             <section className='relative flex flex-col items-center justify-center w-full gap-8 h-screen'>
                 <BG_Glow size={50} color={{one: "bg-red-100",two: "bg-purple-200", three: "bg-purple-300"}} position="top-[10%] left-[25%]"/>
-                <h1 className=' text-8xl max-[350px]:text-6xl flex text-amber-700 z-10 backdrop-blur-xs'>
+                <h1 className=' text-8xl max-[490px]:text-6xl flex text-amber-700 z-10 backdrop-blur-xs'>
                 <IoIosFlash />
                 <p className="">code</p>
                 <p className="text-gray-800">split</p>
