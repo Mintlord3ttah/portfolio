@@ -5,8 +5,8 @@ export default function Skills() {
   return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
     <section className='flex flex-col items-center max-[490px]:items-start justify-center w-full gap-8 h-screen'>
     <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[0] bottom-0" />
-        <div className='sp-border size-40 rounded-full flex '>
-            <h1 className='text-amber-700 text-8xl'>Skills</h1>
+        <div className='mb-16 max-[620px]:pt-40 flex max-[490px]:text-center w-full items-center justify-center gap-4'>
+            <h1 className='sp-heading relative text-amber-700 text-8xl z-10'>Skills</h1>
         </div>
         <p className='text-2xl text-center text-gray-700'>With an unwavering natural flare I have developed for my craft in coding and software developement in general, I've got a complete arsenal which I have proven in my skills sets.</p>
         <p className='text-amber-700 text-2xl mt-12 hover:text-amber-900 transition-all duration-500 cursor-pointer'>See Skills below &darr;</p>

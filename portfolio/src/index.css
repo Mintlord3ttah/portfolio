@@ -34,9 +34,19 @@ body{
   }
  }
 
- .sp-border{
-  border-top: 2px solid var(--primary-color);
-  border-right: 25px solid var(--primary-color);
+ .sp-heading{
+  z-index: 10;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    bottom: -40px;
+    left: 0;
+    border-top: 2px solid #c46c319f;
+    border-right: 25px solid #c46c319f;
+  }
   
   /* border-bottom: 25px solid var(--primary-color); */
  }
