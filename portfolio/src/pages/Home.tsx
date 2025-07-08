@@ -54,7 +54,7 @@ export default function Home() {
 
         
     </section>
-    {/* <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
+    <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center" id="projects">
         <div className="">
             <BG_Glow size={50} color={{one: "bg-blue-300",two: "bg-blue-400", three: "bg-blue-500"}} position="right-[50%] bottom-[20%]" />
             <h2 className="text-2xl   mb-8 text-[var(--primary-color)]">Projects</h2>
@@ -65,7 +65,7 @@ export default function Home() {
                 <ProjectCard img="japa.png" title="Japa - Task Management app" description="This is a simple yet indespensible native app for preparing and managing travel items." />
             </div>
         </div>
-    </section> */}
+    </section>
     <section className="px-24 mt-36 relative max-[1200px]:px-8 max-[1000px]:items-center">
         <h2 className="text-2xl mb-4 text-[var(--primary-color)]">Testimonials</h2>
         <p className="text-gray-600 text-xl">What my clients say about me:</p>
