@@ -20,7 +20,7 @@ export default function Navbar() {
         <Logo />
         <button onClick={()=>setMenu(prev=>!prev)} className='btn hidden max-[620px]:block text-2xl'>{menu ? <FaTimes /> :<IoMenuOutline />}</button>
         </div>
-      <ul className={`${diplay_list} flex space-x-8 transition-all duration-500 font-bold text-gray-500 max-[620px] max-[620px]:flex-col max-[620px]:absolute max-[620px]:top-16 max-[620px]:left-0 max-[620px]:bg-white max-[620px]:w-full max-[620px]:border-t-gray-300 max-[620px]:border-t max-[620px]:mt-7.5`}>
+      <ul className={`${diplay_list} flex space-x-8 transition-all duration-500 font-bold text-gray-500 max-[620px] max-[620px]:flex-col max-[620px]:absolute max-[620px]:top-full max-[620px]:left-0 max-[620px]:bg-white max-[620px]:w-full max-[620px]:border-t-gray-300 max-[620px]:border-t `}>
         <List label="Projects" />
         <List label="Skills" />
         <List label="About" />
