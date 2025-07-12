@@ -6,7 +6,8 @@ export default function Contact() {
     <section className='flex flex-col items-center justify-center w-full gap-8 pt-40 max-[620px]:pt-24'>
       <h1 className=' text-8xl max-[490px]:text-6xl flex text-amber-700 text-center'>Let's Discuss It</h1>
       <p className='text-2xl text-center text-gray-700'>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. You are just a message away!</p>
-        <FormComponent />
+      
+      <FormComponent />
     </section>
         <Navigators nav_back="About" />
     
