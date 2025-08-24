@@ -9,7 +9,7 @@ export default function Logo() {
         <h3 className="text-4xl text-[#c46b31]"><IoIosFlash /></h3>
         <span className="font-bold flex text-[#c46b31]">
             <span className=" py-1.5">code</span>
-            <span className="flex items-center justify-center py-1.5 shadow-sm border-y border-y-gray-200  text-gray-700">split</span>
+            <span className="flex items-center justify-center text-gray-700">split</span>
         </span>
     </div>
     </Link>
