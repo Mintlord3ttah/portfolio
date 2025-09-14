@@ -35,7 +35,7 @@ export default function About() {
                 <p className="">code</p>
                 <p className="text-gray-800">split</p>
             </h1>
-            <p className='text-2xl max-[490px]:text-xl text-center z-10 backdrop-blur-sm'>You got the idea <strong>code-split</strong> brings it to live. code split is a name I found appealing and suitable for solving real world problems with simplicity.</p>
+            <p className='text-2xl max-[490px]:text-xl text-center z-10 backdrop-blur-sm'>You got the idea <strong>code-split</strong> brings it to live. Whether you are an entrepreneur, or a developer looking to optimize your workflow, code-split is here to help.</p>
             <div className='flex gap-12 px-4 text-amber-700 text-2xl max-[400px]:text-lg mt-12'>
                 <p onClick={()=>setToAboutMe(prev=>!prev)} className="hover:text-gray-800 group transition-all duration-500 cursor-pointer"><span className="group-hover:bg-gray-400 p-2.5 rounded-full bg-amber-200 w-fit block"><LiaUserEditSolid /></span> About the developer</p>
                 <p onClick={()=>setToMyService(prev=>!prev)} className="hover:text-gray-800 group transition-all duration-500 cursor-pointer"><span className="group-hover:bg-gray-400 p-2.5 rounded-full bg-amber-200 w-fit block"><MdMiscellaneousServices /></span> My services</p>
