@@ -13,7 +13,6 @@ export default function Stack({stack, level}: {stack: string, level: number}) {
       if(!windowLoad) return clearTimeout(windowLoadTimer)
       timer = setTimeout(()=>{
         setIncremental(prev=> incremental === level ? level : prev + 1)
-        console.log({incremental, timer})
         if(incremental >= level) clearTimeout(timer)
       },50)
     }

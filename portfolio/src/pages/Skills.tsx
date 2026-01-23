@@ -3,13 +3,15 @@ import BG_Glow from "../components/BG_Glow"
 import Navigators from "../components/Navigators"
 import Skill from "../components/Skill"
 import useScrollIntoView, { type element } from "../utils/scrollIntoView"
+import { useAppProvider } from "../themeContext/AppProvider"
 
 export default function Skills() {
+  const {theme} = useAppProvider()
   const [isScroll, setIsScroll] = useState(false)
   const skills = useRef<HTMLTableSectionElement>(null)
   useScrollIntoView({element: skills.current as element, trigger: isScroll})
 
-  return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[1000px]:flex-col max-[1000px]:items-center">
+  return <section className="sec-bg flex flex-col px-24 pt-12 justify-between gap-20 max-[1200px]:px-8 max-[500px]:px-4 max-[1000px]:flex-col max-[1000px]:items-center">
     <section className='flex flex-col items-center justify-center w-full gap-8 h-screen'>
     <BG_Glow size={50} color={{one: "bg-blue-100",two: "bg-blue-200", three: "bg-blue-300"}} position="right-[0] bottom-0" />
         <div className='mb-16 max-[620px]:mb-4 max-[620px]:pt-32 flex max-[490px]:text-center w-full items-center justify-center gap-4'>
@@ -23,10 +25,10 @@ export default function Skills() {
             <h2 className='text-2xl  text-amber-700'>My Skills</h2>
             <p className=' text-gray-500 mt-4'>Here are some of the skills I have acquired over the years.</p>
         </div>
-        <div className="relative ">
+        <div className={`relative p-8 rounded-2xl ${theme === "light" ? "bg-neutral-100" : "bg-neutral-800"} shadow max-[500px]:p-4`}>
             <BG_Glow size={50} color={{one: "bg-green-300",two: "bg-green-400", three: "bg-green-500"}} position="right-[30%] top-[10%]" />
-            <h3 className="text-4xl">Front-end</h3>
-            <ul className="list-disc z-10 backdrop-blur-xs list-inside mt-8  flex flex-col gap-4">
+            <h3 className="text-4xl border-b border-b-gray-400 pb-4">Front-end</h3>
+            <ul className="list-disc max-[500px]:list-none z-10 backdrop-blur-xs list-inside mt-8  flex flex-col gap-4">
                 <Skill name="HTML">
                     The backbone of web content, I use HTML to structure and present information on the web.
                 </Skill>
@@ -59,10 +61,10 @@ export default function Skills() {
                 </Skill>
             </ul>
         </div>
-        <div className="relative">
+        <div className={`relative p-8 rounded-2xl ${theme === "light" ? "bg-neutral-100" : "bg-neutral-800"} shadow max-[500px]:p-4`}>
             <BG_Glow size={50} color={{one: "bg-red-100",two: "bg-red-200", three: "bg-red-300"}} position="left-[10%] top-[10%]" />
-            <h3 className="text-4xl">Back-end</h3>
-            <ul className="list-disc list-inside z-10 backdrop-blur-xs mt-8  flex flex-col gap-4">
+            <h3 className="text-4xl border-b border-b-gray-400 pb-4">Back-end</h3>
+            <ul className="list-disc max-[500px]:list-none list-inside z-10 backdrop-blur-xs mt-8  flex flex-col gap-4">
                 <Skill name="Node.js">
                     I stack up my niche continuing from the JavaScript ecosytem and Node.js is not an exception for building scalable APIs.
                 </Skill>
@@ -95,9 +97,9 @@ export default function Skills() {
                 </Skill>
             </ul>
         </div>
-        <div className="">
-            <h3 className="text-4xl">Other Skills</h3>
-            <ul className="list-disc list-inside mt-8  flex flex-col gap-4">
+        <div className={`p-8 rounded-2xl ${theme === "light" ? "bg-neutral-100" : "bg-neutral-800"} shadow max-[500px]:p-4`}>
+            <h3 className="text-4xl border-b border-b-gray-400 pb-4">Other Skills</h3>
+            <ul className="list-disc max-[500px]:list-none list-inside mt-8  flex flex-col gap-4">
                 <Skill name="Git">
                     I use Git for version control, managing code changes and collaborating with other developers.
                 </Skill>
