@@ -1,4 +1,4 @@
-import { BiBadge, BiLinkAlt } from "react-icons/bi";
+import { BiLinkAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { textTruncate } from "../utils/textTrunc";
 

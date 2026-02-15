@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import BG_Glow from "../components/BG_Glow";
 import CTA from "../components/CTA";
 import Navigators from "../components/Navigators";
-import ProjectCard from "../components/ProjectCard";
 import Stack from "../components/Stack";
 import TestimonialCard from "../components/TestimonialCard";
 import useScrollIntoView, { type element } from "../utils/scrollIntoView";
