@@ -15,7 +15,7 @@ export default function Skills() {
     <section className='flex flex-col items-center justify-center w-full gap-8 h-screen'>
     <BG_Glow size={50} color={{one: "bg-blue-100",two: "bg-blue-200", three: "bg-blue-300"}} position="right-[0] bottom-0" />
         <div className='mb-16 max-[620px]:mb-4 max-[620px]:pt-32 flex max-[490px]:text-center w-full items-center justify-center gap-4'>
-            <h1 className='text-amber-700 text-8xl max-[550px]:text-6xl max-[360px]:text-5xl z-10'>&mdash; Skills &mdash;</h1>
+            <h1 className='text-amber-700 text-7xl max-[550px]:text-6xl max-[360px]:text-5xl z-10'>Skills Obtained</h1>
         </div>
         <p className='text-2xl max-[490px]:text-xl text-center z-10 backdrop-blur-xs'>With an unwavering natural flair I have developed for my craft in coding and software development in general, I've got a complete arsenal which I have proven in my skill sets.</p>
         <p onClick={()=>setIsScroll(prev=>!prev)} className='text-amber-700 text-2xl mt-12 hover:text-amber-900 transition-all duration-500 cursor-pointer'>See Skills below &darr;</p>

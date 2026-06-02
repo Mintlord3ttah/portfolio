@@ -8,6 +8,7 @@ import useScrollIntoView, { type element } from "../utils/scrollIntoView";
 import { useAppProvider } from "../themeContext/AppProvider";
 import { Link } from "react-router-dom";
 import ProjectContainer from "../components/ProjectContainer";
+import Contact from "../components/Contact";
 
 const projects = [
     {
@@ -139,12 +140,16 @@ export default function Home() {
                 <h2 className="text-2xl mb-4 text-[var(--primary-color)]">Testimonials</h2>
                 <p className=" text-xl">What my clients say about me:</p>
                 <BG_Glow size={50} color={{ one: "bg-lime-100", two: "bg-lime-200", three: "bg-lime-300" }} position="left-[10%] bottom-0" />
-                <div className="flex gap-8 mt-8 max-[636px]:flex-col backdrop-blur-xs z-10">
+                <div className="flex gap-8 mt-8 max-[700px]:flex-col backdrop-blur-xs z-10">
                     <TestimonialCard name="Ettah N. Ettah" feedback="This is the best service I've ever used!" />
                     <TestimonialCard name="Jane Smith" feedback="Absolutely fantastic experience!" />
                     <TestimonialCard name="Bob Johnson" feedback="I can't recommend this enough!" />
                 </div>
             </section>
+            <section className="mt-36 relative max-[1000px]:items-center flex items-center justify-center flex-col">
+                <Contact />
+            </section>
+
             <Navigators style="justify-end" nav_to="Skills" />
         </section>
     )
