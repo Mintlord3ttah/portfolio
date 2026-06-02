@@ -141,8 +141,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className=" relative max-[1000px]:items-center" id="projects">
-                <div ref={projectsRef} className="pt-36">
+            <section className=" relative max-[1000px]:items-center bg-orange-200 py-36" id="projects">
+                <div ref={projectsRef} className="">
                     <BG_Glow size={50} color={{ one: "bg-blue-300", two: "bg-blue-400", three: "bg-blue-500" }} position="right-[50%] bottom-[20%]" />
                     <h2 className="text-2xl  mb-8 text-[var(--primary-color)]">Projects</h2>
                     <div className="grid grid-cols-2 max-[690px]:grid-cols-1 max-[636px]:gap-4 gap-8 w-fit">
