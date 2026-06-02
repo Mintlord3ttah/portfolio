@@ -12,10 +12,27 @@ import Contact from "../components/Contact";
 
 const projects = [
     {
+        name: "DEVARS - Developer Tool",
+        description: "Devars unifies workflows with a plugin-first CLI, SDKs for JavaScript and Python, and an open core model that keeps the developer in control.",
+        link: "devars.vercel.app",
+        photo: "/devars-dark.png",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Express", "Commander.js"],
+        status: ["Paused", "Deployed", "Team Work"]
+    },
+    {
+        name: "Ellara - E-commerce Platform",
+        description: "Ellara is a modern e-commerce platform that offers a seamless shopping experience, secure payment options, and a dashboard for sellers.",
+        link: "fashion-hub-rosy.vercel.app/",
+        photo: "/ellara-dashboard.png",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Express", "MongoDB", "Stripe API", "Supabase"],
+        status: ["Under Development", "Deployed", "Solo"]
+    },
+    {
         name: "Iremember - Task Management app",
         description: "This is a simple yet indespensible web app for preparing and managing travel items.",
         link: "iremember-eta.vercel.app",
         photo: "/iREMEMBER APP-2.gif",
+        technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "Express", "MongoDB"],
         status: ["Deployed", "Solo"]
     },
     {
@@ -23,6 +40,7 @@ const projects = [
         description: "This is a platform for delivering food from local restaurants.",
         link: "mintlord3ttah.github.io/dailybreadfood.com",
         photo: "/dailybread-foods-1.png",
+        technologies: ["HTML",  "CSS", "JavaScript"],
         status: ["Deployed", "Solo"]
     },
     {
@@ -30,6 +48,7 @@ const projects = [
         description: "A platform to seemlessly grab any kind of recipe with auto completion and search filtering",
         link: "chef-diary.vercel.app",
         photo: "/chef-diary.png",
+        technologies: ["React", "Tailwind CSS", "JavaScript", "JWT Authentication"],
         status: ["Deployed", "Solo"]
     },
     {
@@ -37,6 +56,7 @@ const projects = [
         description: "This is a blogging platform that allows users to create and share their own blogs.",
         link: "instablog.vercel.app",
         photo: "/new design insta.png",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase", "OAuth"],
         status: ["Unfinished", "Deployed", "Solo"]
     },
     {
@@ -44,6 +64,7 @@ const projects = [
         description: "This project is a map based web app that helps users keep logs/track their location.",
         link: "mapify.vercel.app",
         photo: "/mapify2.png",
+        technologies: ["React", "Tailwind CSS", "Leaflet.js", "Supabase"],
         status: ["Completed", "Deployed", "Solo"]
     },
     {
@@ -51,6 +72,7 @@ const projects = [
         description: "This is a collaborative investment app that allows users to pool resources and invest in real estate projects.",
         link: "fundaweb.vercel.app",
         photo: "/fundaweb-best-landing-2.png",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"],
         status: ["Under Development", "Deployed", "Team Work"]
     },
 ]
@@ -86,7 +108,7 @@ export default function Home() {
                     </div>
                     <div className="">
                         <h1 className="text-4xl font-bold mt-6 text-[#c46b31]">Confidence N. Ettah</h1>
-                        <p className=" max-[1000px]:text-2xl text-sm mt-4 font-medium p-4 bg-neutral-300/40 rounded-2xl">I build developer tools and scalable software, focusing on CLI tools, automation, and modern web apps that help teams/firms move faster and ship better products.
+                        <p className=" max-[1000px]:text-lg text-sm mt-4 font-medium p-4 bg-neutral-300/40 rounded-lg">I build developer tools and scalable software, focusing on CLI tools, automation, and modern web apps that help teams/firms move faster and ship better products.
 </p>
                         <CTA onClick={() => setIsScroll(prev => !prev)} />
                     </div>
@@ -124,14 +146,14 @@ export default function Home() {
                     <BG_Glow size={50} color={{ one: "bg-blue-300", two: "bg-blue-400", three: "bg-blue-500" }} position="right-[50%] bottom-[20%]" />
                     <h2 className="text-2xl  mb-8 text-[var(--primary-color)]">Projects</h2>
                     <div className="grid grid-cols-2 max-[690px]:grid-cols-1 max-[636px]:gap-4 gap-8 w-fit">
-                        <div className="col-span-2 max-[690px]:col-span-1">
-                            <ProjectContainer importance="major" projectNumb={1} heading="Developer Arsenal — DEVARS" photo="/devars-dark.png" link="devars.vercel.app"
-                            status={["Under Development", "Deployed", "Team Work"]}
+                        {/* <div className="col-span-2 max-[690px]:col-span-1">
+                            <ProjectContainer importance="major" projectNumb={1} heading="Developer Arsenal — " photo="/devars-dark.png" link="devars.vercel.app"
+                            status={}
                             text="Devars unifies workflows with a plugin-first CLI, SDKs for JavaScript and Python, and an open core model that keeps the developer in control." />
-                        </div>
+                        </div> */}
                             {projects.map((v, i)=>{
                                 return <ProjectContainer status={v.status} projectNumb={i+2} heading={v.name} photo={v.photo} link={v.link}
-                                text={v.description} />
+                                text={v.description} technologies={v.technologies} />
                             })}
                     </div>
                 </div>

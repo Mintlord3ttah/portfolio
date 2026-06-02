@@ -12,7 +12,7 @@ export default function Contact() {
                 <img src="/coffee-code.jfif" alt="contact" className="size-full rounded-2xl object-cover" />
             </div>
             
-            <div className="size-full p-8 flex flex-col  gap-8">
+            <div className="size-full p-8 max-[400px]:p-4 flex flex-col  gap-8">
                 <div className="w-full">
                     <h3 className="text-2xl font-bold">Let's Work Together!</h3>
                     <p className="mt-4 text-neutral-500 text-sm">Whether you have a project in mind or just want to say hello, I'm here to listen. Don't hesitate to get in touch, and let's create something amazing together!</p>
