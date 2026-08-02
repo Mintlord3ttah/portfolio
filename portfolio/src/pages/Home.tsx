@@ -129,7 +129,7 @@ function CircularMeter({ label, level, color }: { label: string; level: number; 
 }
 
 export default function Home() {
-    const { theme, setSpecNavigation } = useAppProvider()
+    const { setSpecNavigation } = useAppProvider()
     const [isScroll, setIsScroll] = useState(false)
     const projectsRef = useRef<HTMLDivElement>(null)
     useScrollIntoView({ element: projectsRef.current as element, trigger: isScroll })
