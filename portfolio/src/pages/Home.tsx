@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import BG_Glow from "../components/BG_Glow";
 import CTA from "../components/CTA";
-import Stack from "../components/Stack";
 import useScrollIntoView, { type element } from "../utils/scrollIntoView";
 import { useAppProvider } from "../themeContext/AppProvider";
 import { Link } from "react-router-dom";
@@ -84,22 +83,23 @@ const projects = [
     },
 ]
 
-const stacks = [
-    { stack: "HTML", level: 98 },
-    { stack: "CSS", level: 89 },
-    { stack: "JavaScript", level: 97 },
-    { stack: "React", level: 99 },
-    { stack: "React Native", level: 90 },
-    { stack: "TypeScript", level: 100 },
-    { stack: "Tailwind CSS", level: 93 },
-    { stack: "Next.js", level: 95 },
-    { stack: "Node.js", level: 90 },
-    { stack: "Express", level: 95 },
-    { stack: "MongoDB", level: 95 },
-    { stack: "PostgreSQL", level: 95 },
-]
+// const stacks = [
+//     { stack: "HTML", level: 98 },
+//     { stack: "CSS", level: 89 },
+//     { stack: "JavaScript", level: 97 },
+//     { stack: "React", level: 99 },
+//     { stack: "React Native", level: 90 },
+//     { stack: "TypeScript", level: 100 },
+//     { stack: "Tailwind CSS", level: 93 },
+//     { stack: "Next.js", level: 95 },
+//     { stack: "Node.js", level: 90 },
+//     { stack: "Express", level: 95 },
+//     { stack: "MongoDB", level: 95 },
+//     { stack: "PostgreSQL", level: 95 },
+// ]
 
 // Circular meter component
+
 function CircularMeter({ label, level, color }: { label: string; level: number; color: string }) {
     const circumference = 2 * Math.PI * 40;
     const offset = circumference - (level / 100) * circumference;
