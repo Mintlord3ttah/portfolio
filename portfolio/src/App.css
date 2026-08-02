@@ -1,0 +1,34 @@
+body { scroll-behavior: smooth; }
+
+/* Fixed Hero Section (Non-Parallax) */
+.hero-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, #c46b3133, #fff3f3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Main Content Overlay */
+.content-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 60px 20px;
+  transition: 0.3s;
+  z-index: 9;
+}
+
+/* Projects Section */
+.projects-section {
+  position: relative;
+  z-index: 1;
+}

@@ -31,7 +31,7 @@ function AppProviderContext({children}: {children: React.ReactNode}){
     },[])
 
     return <ThemeContext.Provider value={{theme, setTheme, windowLoad, setWindowLoad, specNavigation, setSpecNavigation}}>
-        <div className={`${theme === "light" ? "theme-light" : "theme-dark"} transition-all duration-300`}>
+        <div className={`${theme === "light" ? "theme-light" : "theme-dark"} mt-16 transition-all duration-300`}>
             <div ref={resetLayout}></div>
             {children}
         </div>
