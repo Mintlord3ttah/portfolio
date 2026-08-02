@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import BG_Glow from "../components/BG_Glow";
 import CTA from "../components/CTA";
-import Stack from "../components/Stack";
 import useScrollIntoView, { type element } from "../utils/scrollIntoView";
 import { useAppProvider } from "../themeContext/AppProvider";
 import { Link } from "react-router-dom";
